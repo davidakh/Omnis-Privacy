@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omnis Privacy Policy</title>
+  <meta name="description" content="How Omnis for macOS handles your information: on-device by default, no accounts, no tracking.">
+  <style>
+    :root {
+      --text: #101114;
+      --muted: #494d56;
+      --link: #2152f3;
+      --bg: #ffffff;
+      --panel: #f4f5f7;
+      --line: #e3e5ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f2f3f5;
+        --muted: #a3a8b3;
+        --link: #6b8cff;
+        --bg: #111214;
+        --panel: #1c1d21;
+        --line: #2c2e33;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 20px 72px; }
+    .eyebrow { margin: 0 0 10px; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.15; }
+    h1 + p { color: var(--muted); font-size: 15px; }
+    h2 { margin: 44px 0 12px; font-size: 22px; line-height: 1.25; }
+    h3 { margin: 28px 0 8px; font-size: 18px; }
+    p, ul { margin: 0 0 16px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--link); text-decoration: none; overflow-wrap: anywhere; }
+    a:hover { text-decoration: underline; }
+    code { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--panel); padding: 2px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+    .glance { background: var(--panel); border-radius: 14px; padding: 22px 24px 8px; margin: 28px 0; }
+    .glance h3 { margin-top: 0; }
+    .table { overflow-x: auto; margin: 0 0 20px; }
+    table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+    th { color: var(--muted); font-weight: 600; }
+    footer { margin-top: 48px; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+<p class="eyebrow">Omnis for macOS</p>
+<h1>Omnis Privacy Policy</h1>
+<p><strong>Effective date:</strong> October 6, 2026<br><strong>Last updated:</strong> October 6, 2026</p>
+<p>This policy explains how <strong>Omnis</strong>, a macOS app published by <strong>David Akhmedbayev</strong> ("we", "us"), handles your information. It covers the Omnis app for macOS and nothing else.</p>
+<aside class="glance"><h3>At a glance</h3>
+<ul><li><strong>On-device by default.</strong> Out of the box, Omnis records, transcribes, summarizes, searches, and answers questions entirely on your Mac.</li><li><strong>We don't have your data.</strong> There is no Omnis server, no account, and no cloud sync. We never receive your recordings, transcripts, screen content, or chats.</li><li><strong>Cloud AI is your choice.</strong> Your content leaves your Mac only if <em>you</em> turn on Apple Private Cloud Compute. When you do, it goes from your Mac to Apple, not through us.</li><li><strong>No tracking, no ads, no selling.</strong> We don't track you across apps or websites, show ads, or sell or share your personal information.</li><li><strong>You're in control.</strong> Delete a session and its data is gone. Delete the app and its container and everything is gone.</li></ul></aside>
+<hr>
+<h2 id="what-omnis-does">1. What Omnis does</h2>
+<p>Omnis is an AI assistant for meetings and your screen. It lives in a floating panel above the Dock and lets you:</p>
+<ul><li>Record <strong>sessions</strong> (meetings, calls, videos) from your microphone and/or your Mac's system audio, with a live transcript.</li><li>Get AI-generated titles, summaries, and topic sections when a session ends, and edit summaries by chatting.</li><li>Get suggested replies during a live call ("auto answer").</li><li>Ask questions about what's on your screen.</li><li>Ask questions across your past sessions and chats.</li></ul>
+<h2 id="information-omnis-processes">2. Information Omnis processes</h2>
+<p>Everything below is created and stored <strong>on your Mac</strong>, inside Omnis's sandboxed app container (using Apple's SwiftData and the app container), unless you turn on Apple Private Cloud Compute (Section 4).</p>
+<div class="table"><table><thead><tr><th>Data</th><th>What it is</th><th>Where it lives</th></tr></thead><tbody><tr><td><strong>Audio recordings</strong></td><td>Your microphone and/or system/call audio, saved as AAC files. Recordings can include the voices of other people on a call.</td><td>App container on your Mac</td></tr><tr><td><strong>Transcripts</strong></td><td>Text produced on-device by Apple's Speech framework. The first time you transcribe, macOS may download a speech model from Apple.</td><td>App container on your Mac</td></tr><tr><td><strong>Screen content</strong></td><td>When you ask a question that needs it, Omnis captures the <strong>frontmost window only</strong> (never Omnis's own panel), extracts text with on-device OCR, and reads any QR codes. The image is discarded as soon as the text has been extracted.</td><td>Processed on your Mac; only the extracted text is kept, with your chat</td></tr><tr><td><strong>Questions, chats, AI answers, and summaries</strong></td><td>What you ask, and what Omnis answers or writes.</td><td>App container on your Mac</td></tr><tr><td><strong>Session details</strong></td><td>Titles, dates, and durations.</td><td>App container on your Mac</td></tr><tr><td><strong>Search index</strong></td><td>Text embeddings created on-device with Apple's NaturalLanguage framework so you can search past sessions and chats.</td><td>App container on your Mac</td></tr><tr><td><strong>Settings</strong></td><td>Your preferences.</td><td>macOS UserDefaults on your Mac</td></tr><tr><td><strong>Downloaded AI models</strong></td><td>The on-device language model you choose.</td><td>App container on your Mac</td></tr></tbody></table></div>
+<h3>What we do <strong>not</strong> collect</h3>
+<p>Because Omnis has no server and no account system, <strong>we (the developer) do not receive or store</strong> any of the following:</p>
+<ul><li>Your recordings, transcripts, screen content, chats, summaries, or search index</li><li>Your name, email address, or any account details (there are no accounts)</li><li>Your location, contacts, or device identifiers</li><li>Usage analytics, advertising identifiers, or tracking data</li></ul>
+<p>Omnis contains no analytics, advertising, or crash-reporting SDKs.</p>
+<p><strong>Crash reports via Apple.</strong> If you have chosen in your Mac's settings to share analytics with app developers, or you are a TestFlight tester who submits feedback, Apple may give us crash reports, basic diagnostic information, and any feedback (including screenshots) you choose to submit. This is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>, and we use it only to fix bugs. You can turn this sharing off in <strong>System Settings › Privacy &amp; Security › Analytics &amp; Improvements</strong>. TestFlight also shares testers' names and email addresses with us so we can manage the beta.</p>
+<h2 id="how-your-information-is-used">3. How your information is used</h2>
+<p>Omnis uses the information above only to provide the features you use:</p>
+<ul><li><strong>Recordings</strong> are transcribed and can be played back.</li><li><strong>Transcripts</strong> power live notes, highlights, auto answer, summaries, titles, and topic sections.</li><li><strong>Screen content</strong> is used to answer the question you asked about your screen.</li><li><strong>Chats, summaries, and the search index</strong> let you ask questions across past sessions.</li><li><strong>Settings</strong> make the app work the way you configured it.</li></ul>
+<p>Omnis doesn't use your information for advertising, profiling, or anything else. We don't use your content to train AI models, and we couldn't, because we never receive it.</p>
+<h2 id="on-device-ai-and-optional-cloud-processing">4. On-device AI and optional cloud processing</h2>
+<h3>Default: on your Mac</h3>
+<p>By default, all AI processing happens on your Mac:</p>
+<ul><li><strong>Bonsai language models</strong> (open-weight models by Prism ML) run locally using Apple's MLX framework.</li><li><strong>Apple's on-device Foundation Model</strong> handles live notes, highlights, auto answer, and describing screen content.</li><li><strong>Transcription, OCR, QR reading, and search embeddings</strong> use Apple's on-device frameworks.</li></ul>
+<p>In this mode your recordings, transcripts, screen content, and chats do not leave your Mac. The only network connections are model downloads, described below.</p>
+<h3>Optional: Apple Private Cloud Compute</h3>
+<p>If you choose it in Omnis's settings, some AI requests may be processed by Apple's <strong>Private Cloud Compute</strong> instead of on your Mac. If Private Cloud Compute isn't available, Omnis falls back to on-device processing. Requests sent to Private Cloud Compute are handled by Apple under Apple's terms. We do not receive them.</p>
+<ul><li>Apple Privacy Policy: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li><li>About Private Cloud Compute: <a href="https://security.apple.com/blog/private-cloud-compute/">https://security.apple.com/blog/private-cloud-compute/</a></li></ul>
+<h3>Network connections Omnis makes</h3>
+<p>Omnis connects only to:</p>
+<div class="table"><table><thead><tr><th>Service</th><th>When</th><th>What it can see</th></tr></thead><tbody><tr><td><strong>Hugging Face</strong></td><td>When you download an on-device model</td><td>Standard request information such as your IP address and the model requested. None of your content is sent. <a href="https://huggingface.co/privacy">Hugging Face Privacy Policy</a></td></tr><tr><td><strong>Apple</strong></td><td>Speech-model downloads managed by macOS, and Private Cloud Compute if you turn it on</td><td>Handled under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a></td></tr></tbody></table></div>
+<p>Omnis makes no other network connections.</p>
+<h2 id="permissions">5. Permissions</h2>
+<p>macOS asks for your permission before Omnis can use these features. Both are optional. If you decline, Omnis still works with fewer features.</p>
+<ul><li><strong>Microphone.</strong> Used to transcribe your side of a conversation. You can pause or turn off the microphone at any time during a session.</li><li><strong>Screen &amp; System Audio Recording.</strong> Used to capture call or system audio during a session, and to capture the frontmost window <strong>only when you ask a screen-related question</strong>.</li></ul>
+<p>You can change either permission at any time in <strong>System Settings › Privacy &amp; Security</strong>.</p>
+<h2 id="recording-other-people-your-responsibility">6. Recording other people: your responsibility</h2>
+<p>Omnis can record and transcribe other people on a call, and auto answer can suggest replies based on what they say. <strong>You are responsible for following the laws that apply to you, including getting any consent required before recording a conversation.</strong></p>
+<p>Recording laws vary. Some places allow recording when one participant (you) consents. Others, including several U.S. states and many countries, require <strong>every</strong> participant to consent. Workplace rules and data-protection laws such as the GDPR may also apply, especially if you record for work. When in doubt, tell everyone you're recording and get their agreement. This section is general information, not legal advice.</p>
+<h2 id="storage-security-and-retention">7. Storage, security, and retention</h2>
+<h3>How your data is protected</h3>
+<ul><li><strong>App Sandbox.</strong> Omnis runs in Apple's App Sandbox, which limits what the app can access on your Mac. Its data is stored in its own container.</li><li><strong>Hardened Runtime.</strong> Omnis is built with Apple's Hardened Runtime, which helps protect it from code injection and tampering.</li></ul>
+<p>Your data's security also depends on your Mac. We recommend a strong login password and FileVault disk encryption. No system is perfectly secure, and we can't guarantee the security of data on your device or with Apple.</p>
+<h3>How long data is kept</h3>
+<ul><li><strong>On your Mac:</strong> until you delete it. Deleting a session deletes its audio, transcript, summary, and search-index entries. Screen images are never stored. Only the text extracted from them is kept, with your chat.</li><li><strong>Downloaded models:</strong> until you delete the app.</li><li><strong>Everything:</strong> uninstalling Omnis and removing its container (<code>~/Library/Containers/com.david.Omnis</code>) deletes all Omnis data.</li><li><strong>With Private Cloud Compute:</strong> governed by Apple's policies.</li><li><strong>Feedback emails you send us:</strong> see Section 8.</li></ul>
+<p>Because we never receive your local data, <strong>we cannot access, recover, or delete it for you.</strong> If you delete it, it's gone.</p>
+<h2 id="feedback-emails">8. Feedback emails</h2>
+<p>Omnis has a feedback button that opens a <strong>pre-filled email draft</strong> in your Mail app. The draft contains the question you asked and the AI's answer. <strong>Nothing is sent unless you choose to send it</strong>, and you can edit or remove anything first.</p>
+<p>If you send it, we receive the email at <a href="mailto:david.akhmedbayev@icloud.com">david.akhmedbayev@icloud.com</a>, including your email address, your name (if your email shows it), and whatever the message contains. Please check the draft before sending, since AI answers may include details from your transcripts or screen.</p>
+<p>We use feedback emails only to reply to you and improve Omnis. We keep them until your issue is resolved, plus 90 days, then delete them. You can ask us to delete them sooner. Our email is hosted by Apple iCloud Mail, which stores it on our behalf.</p>
+<p><strong>Legal basis (EU/UK):</strong> our legitimate interest in answering your message and improving the app. You can object at any time.</p>
+<h2 id="your-rights">9. Your rights</h2>
+<p>Depending on where you live, including under the GDPR, UK GDPR, and the California Consumer Privacy Act (as amended by the CPRA), you may have rights to <strong>access, correct, delete, or port</strong> your personal information, to <strong>object to or restrict</strong> its processing, and to <strong>withdraw consent</strong>.</p>
+<h3>Exercising your rights on your Mac</h3>
+<p>Since your Omnis data lives only on your Mac, you control it directly:</p>
+<ul><li><strong>Access and portability:</strong> view your sessions, transcripts, summaries, and chats in Omnis. Use the Share button on a session or chat to export its text. Audio files are standard AAC files in the app's container.</li><li><strong>Correction:</strong> edit summaries and titles in the app.</li><li><strong>Deletion:</strong> delete individual sessions, or uninstall the app and remove its container.</li><li><strong>Objection / withdrawing consent:</strong> turn off microphone or screen permissions, or turn off Private Cloud Compute.</li></ul>
+<p>For data held by Apple or Hugging Face, contact that company using the links in Section 4.</p>
+<h3>Contacting us</h3>
+<p>For anything we hold, such as feedback emails or TestFlight details, or for questions about your rights, email <strong><a href="mailto:david.akhmedbayev@icloud.com">david.akhmedbayev@icloud.com</a></strong>. We'll respond within the time the law requires (generally one month under the GDPR and UK GDPR, and 45 days under the CCPA). We may need to verify your identity first. California residents may use an authorized agent. We will never discriminate against you for exercising your rights.</p>
+<p><strong>Complaints:</strong> if you're in the EU or UK, you can complain to your local data-protection authority (in the UK, the Information Commissioner's Office, <a href="https://ico.org.uk">https://ico.org.uk</a>). We'd appreciate the chance to help first.</p>
+<h2 id="children">10. Children</h2>
+<p>Omnis is not directed at children under 13, or under 16 in the European Economic Area and UK, and we do not knowingly collect personal information from them. Since we don't receive app data at all, the only way we could get a child's information is through a feedback email. If you believe a child has sent us information, contact us and we'll delete it.</p>
+<h2 id="international-users-and-data-transfers">11. International users and data transfers</h2>
+<p>Omnis itself doesn't transfer your data anywhere. Its default processing happens on your Mac, wherever you are.</p>
+<p>Data crosses borders only if you:</p>
+<ul><li><strong>Use Apple Private Cloud Compute,</strong> under Apple's policies.</li><li><strong>Send us a feedback email.</strong> It is stored in Apple iCloud Mail, which may process data in the United States and other countries.</li></ul>
+<h2 id="we-do-not-sell-or-share-your-personal-information">12. We do not sell or share your personal information</h2>
+<p>We <strong>do not sell</strong> your personal information, and we <strong>do not share</strong> it for cross-context behavioral advertising, as those terms are defined under the CCPA/CPRA. We have not done so in the past 12 months. We do not use or disclose sensitive personal information for any purpose that would give you a right to limit it.</p>
+<p>Omnis does <strong>not track</strong> you as defined by Apple's App Tracking Transparency framework. We don't link data from Omnis with data from other companies' apps, websites, or offline properties for targeted advertising or advertising measurement, and we don't share data with data brokers. Omnis contains no advertising.</p>
+<h2 id="changes-to-this-policy">13. Changes to this policy</h2>
+<p>If we change this policy, we'll post the new version at <a href="https://davidakh.github.io/Omnis-Privacy/">https://davidakh.github.io/Omnis-Privacy/</a> and update the "Last updated" date. If a change materially affects how your data is handled, such as adding a new third-party service, we'll also tell you in the app or in the release notes before it takes effect.</p>
+<h2 id="contact-us">14. Contact us</h2>
+<p><strong>David Akhmedbayev</strong><br>Privacy requests and app feedback: <a href="mailto:david.akhmedbayev@icloud.com">david.akhmedbayev@icloud.com</a></p>
+<footer>© 2026 David Akhmedbayev. All rights reserved.</footer>
+</main>
+</body>
+</html>
+
